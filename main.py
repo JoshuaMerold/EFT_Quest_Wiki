@@ -11,7 +11,7 @@ class mainWindow(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
 
-        myappid = 'eft_quest_wiki.joshua_merold.v_0.1'
+        myappid = 'eft_quest_wiki.joshua_merold.v_0.2'
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
         pixmamp = QPixmap("qw_logo.ico")
@@ -57,7 +57,7 @@ class mainWindow(QtWidgets.QMainWindow):
         self.ui.table.setColumnWidth(4, 90)
         self.ui.table.setHorizontalHeaderItem(4, QtWidgets.QTableWidgetItem("EXP"))
         self.ui.table.insertColumn(5)
-        self.ui.table.setColumnWidth(5, 90)
+        self.ui.table.setColumnWidth(5, 79)
         self.ui.table.setHorizontalHeaderItem(5, QtWidgets.QTableWidgetItem("Roubles"))
         self.ui.table.insertColumn(6)
         self.ui.table.setColumnWidth(6, 117)
@@ -65,7 +65,7 @@ class mainWindow(QtWidgets.QMainWindow):
         self.ui.table.insertColumn(7)
         #self.ui.table.setColumnWidth(7, 143)
         self.ui.table.setHorizontalHeaderItem(7, QtWidgets.QTableWidgetItem("HiddenFavValue"))
-        #self.ui.table.hideColumn(7)
+        self.ui.table.hideColumn(7)
 
         self.ui.pages.setCurrentIndex(0)
 
@@ -84,7 +84,7 @@ class mainWindow(QtWidgets.QMainWindow):
         self.ui.pushButton_4.clicked.connect(self.goSettings)
 
         self.ui.statusbar.addPermanentWidget(self.ui.statusText)
-        self.ui.statusText.setText("v0.1 | All data by <a href='https://escapefromtarkov.gamepedia.com/Escape_from_Tarkov_Wiki'>GamePedia</a>")
+        self.ui.statusText.setText("v0.2 | by Joshua Merold")
 
         self.ui.table.cellDoubleClicked.connect(self.tableClicked)
 
