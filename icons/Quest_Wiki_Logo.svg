@@ -3,16 +3,16 @@
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
-	.st1{font-family:'PRIMETIME-Regular';}
-	.st2{font-size:51.4021px;}
-	.st3{letter-spacing:-3;}
-	.st4{fill:#2CA9FF;}
+	.st0{font-family:'PRIMETIME-Regular';}
+	.st1{font-size:61.018px;}
+	.st2{letter-spacing:-3;}
+	.st3{fill:#2CA9FF;}
+	.st4{fill:none;}
 </style>
 <title>Quest_Wiki_Logo</title>
-<rect x="6.6" y="6.6" class="st0" width="114.9" height="114.9"/>
-<text transform="matrix(1 0 0 1 8.6387 85.4756)" class="st1 st2 st3">Q</text>
-<text transform="matrix(1 0 0 1 52.6729 85.4756)" class="st1 st2">W</text>
-<text transform="matrix(1 0 0 1 12.4521 85.4756)" class="st4 st1 st2 st3">Q</text>
-<text transform="matrix(1 0 0 1 56.4854 85.4756)" class="st4 st1 st2">W</text>
+<text transform="matrix(1 0 0 1 -1.7456 88.5459)" class="st0 st1 st2">Q</text>
+<text transform="matrix(1 0 0 1 50.5264 88.5459)" class="st0 st1">W</text>
+<text transform="matrix(1 0 0 1 2.7813 88.5459)" class="st3 st0 st1 st2">Q</text>
+<text transform="matrix(1 0 0 1 55.0522 88.5459)" class="st3 st0 st1">W</text>
+<rect class="st4" width="128" height="128"/>
 </svg>

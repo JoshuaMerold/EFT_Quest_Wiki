@@ -17,7 +17,7 @@ class mainWindow(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        pixmamp = QPixmap("icons/QW_Logo.png")
+        pixmamp = QPixmap("icons/Quest_Wiki_Logo.png")
         icon = QIcon(pixmamp)
         self.setWindowIcon(icon)
 

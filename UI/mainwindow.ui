@@ -22,10 +22,6 @@
   <property name="windowTitle">
    <string>EFT-Quest Wiki</string>
   </property>
-  <property name="windowIcon">
-   <iconset>
-    <normaloff>../icons/Quest_Wiki_Logo.svg</normaloff>../icons/Quest_Wiki_Logo.svg</iconset>
-  </property>
   <property name="styleSheet">
    <string notr="true">#MainWindow {
 	background-color: rgb(255, 255, 255);
