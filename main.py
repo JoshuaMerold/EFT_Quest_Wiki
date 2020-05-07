@@ -104,20 +104,41 @@ class mainWindow(QtWidgets.QMainWindow):
         self.clicked = False
         self.ui.table.horizontalHeader().sortIndicatorChanged.connect(self.sortFav)
 
-        #self.ui.table.clic
+        self.buttonClicked = "background-color: rgb(242, 242, 242); border: 2px solid rgb(242, 242, 242); border-radius: 35px; color: white;"
+        self.buttonIdle = "background-color: rgb(255,255,255); border: 2px solid rgb(255,255,255); border-radius: 35px; color: white;"
+        self.ui.pushButton_1.setStyleSheet(self.buttonClicked)
 
     def goHome(self):
         self.ui.pages.setCurrentIndex(0)
+        self.changeButtonStyle(0)
 
     def goList(self):
         self.ui.pages.setCurrentIndex(1)
+        self.changeButtonStyle(1)
 
     def goFavorites(self):
         self.ui.pages.setCurrentIndex(2)
+        self.changeButtonStyle(2)
         self.getFav()
 
     def goSettings(self):
         self.ui.pages.setCurrentIndex(3)
+        self.changeButtonStyle(3)
+
+    def changeButtonStyle(self, clickedButton):
+        self.ui.pushButton_1.setStyleSheet(self.buttonIdle)
+        self.ui.pushButton_2.setStyleSheet(self.buttonIdle)
+        self.ui.pushButton_3.setStyleSheet(self.buttonIdle)
+        self.ui.pushButton_4.setStyleSheet(self.buttonIdle)
+
+        if clickedButton == 0:
+            self.ui.pushButton_1.setStyleSheet(self.buttonClicked)
+        elif clickedButton == 1:
+            self.ui.pushButton_2.setStyleSheet(self.buttonClicked)
+        elif clickedButton == 2:
+            self.ui.pushButton_3.setStyleSheet(self.buttonClicked)
+        elif clickedButton == 3:
+            self.ui.pushButton_4.setStyleSheet(self.buttonClicked)
 
     def update(self):
         rd = requestData.Data()
