@@ -14,12 +14,12 @@ class mainWindow(QtWidgets.QMainWindow):
         myappid = 'eft_quest_wiki.joshua_merold.v_0.3'
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
-        pixmamp = QPixmap("qw_logo.ico")
-        icon = QIcon(pixmamp)
-        self.setWindowIcon(icon)
-
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+
+        pixmamp = QPixmap("icons/QW_Logo.png")
+        icon = QIcon(pixmamp)
+        self.setWindowIcon(icon)
 
         pixmamp = QPixmap("icons/house.jpg")
         icon = QIcon(pixmamp)
