@@ -6,3 +6,6 @@
  2. open the "start.bat"
  3. open EFT Quest Wiki via the desktopshortcut, startmenu or execute the main.exe
  4. you are good to go!
+
+## Showcase
+![](data/missionImages/eft_qw_gif.gif)
