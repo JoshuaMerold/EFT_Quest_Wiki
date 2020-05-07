@@ -11,7 +11,7 @@ class mainWindow(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
 
-        myappid = 'eft_quest_wiki.joshua_merold.v_0.2'
+        myappid = 'eft_quest_wiki.joshua_merold.v_0.3'
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
         pixmamp = QPixmap("qw_logo.ico")
@@ -84,7 +84,7 @@ class mainWindow(QtWidgets.QMainWindow):
         self.ui.pushButton_4.clicked.connect(self.goSettings)
 
         self.ui.statusbar.addPermanentWidget(self.ui.statusText)
-        self.ui.statusText.setText("v0.2 | by Joshua Merold")
+        self.ui.statusText.setText("v0.3 | by Joshua Merold")
 
         self.ui.table.cellDoubleClicked.connect(self.tableClicked)
 
